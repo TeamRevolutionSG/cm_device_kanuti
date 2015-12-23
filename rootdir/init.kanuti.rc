@@ -58,7 +58,11 @@ on post-fs-data
 
     #Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
-
+    
+    # Create the directories used by CnE subsystem
+    mkdir /data/connectivity 0771 system system
+    chown system system /data/connectivity1
+    
     # Create directory used by audio subsystem
     mkdir /data/misc/audio 0770 audio audio
 

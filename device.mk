@@ -154,6 +154,14 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     gps.msm8916
 
+# RIL
+PRODUCT_PACKAGES += \
+    libxml2  
+   
+# Connectivity Engine support
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig
+   
 #WLAN
 PRODUCT_PACKAGES += \
     p2p_supplicant.conf \
