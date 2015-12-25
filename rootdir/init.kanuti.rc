@@ -91,6 +91,9 @@ on post-fs-data
 
     mkdir /data/misc/camera 0770 camera camera
 
+    # Create a dir for pin-cache component
+    mkdir /cache/pc 0770 radio system
+    
     # Sensors
     mkdir /data/system 0775 system system
     mkdir /data/system/sensors 0775 system system
