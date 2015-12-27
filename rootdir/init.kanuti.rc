@@ -86,6 +86,9 @@ on post-fs-data
     # Enable the setgid bit on the directory
     mkdir /data/audio 0770 media audio
     chmod 2770 /data/audio
+    
+    # Create a dir for pin-cache component
+    mkdir /cache/pc 0770 radio system
 
     mkdir /data/data/media 0770 media media
 
