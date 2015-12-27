@@ -14,6 +14,8 @@
 
 SONY_ROOT = device/sony/kanuti/rootdir
 
+SONY_PREBUILTS = device/sony/kanuti/prebuilt
+
 SOMC_PLATFORM := kanuti
 
 DEVICE_PACKAGE_OVERLAYS += \
@@ -77,6 +79,14 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+
+Keymaster
+PRODUCT_COPY_FILES += \
+    $(SONY_PREBUILTS)/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
+    $(SONY_PREBUILTS)/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
+    $(SONY_PREBUILTS)/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
+    $(SONY_PREBUILTS)/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
+    $(SONY_PREBUILTS)/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt
 
 # NFC
 PRODUCT_COPY_FILES += \
