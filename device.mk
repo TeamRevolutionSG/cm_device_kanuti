@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-Keymaster
+# Keymaster
 PRODUCT_COPY_FILES += \
     $(SONY_PREBUILTS)/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
     $(SONY_PREBUILTS)/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
