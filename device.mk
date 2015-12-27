@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The Android Open Source Project
+# Copyright (C) 2015 The AOSPERIA Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
 
 #GPS
 PRODUCT_PACKAGES += \
+	com.qualcomm.location \
     libloc_api_v02 \
     libloc_core \
     libloc_eng \
@@ -200,11 +201,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# AOSP Packages
+# CM Packages
 PRODUCT_PACKAGES += \
     InCallUI \
     Launcher3 \
-    messaging
+    messaging \
+
+# Camera
+PRODUCT_PACKAGES += \
+    CameraWorkaround
 
 PRODUCT_PACKAGES += \
     libemoji
