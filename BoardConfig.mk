@@ -125,8 +125,7 @@ NFC_NXP_CHIP_TYPE := PN547C2
 EXTENDED_FONT_FOOTPRINT := true
 
 BUILD_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/sony/msm
-TARGET_KERNEL_CONFIG := aosp_kanuti_tulip_defconfig 
+-include vendor/sony/kernel/KernelConfig.mk
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
