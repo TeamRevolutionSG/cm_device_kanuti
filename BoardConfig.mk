@@ -42,7 +42,7 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 
 BOARD_KERNEL_BOOTIMG := true
 BOARD_CUSTOM_MKBOOTIMG := mkqcdtbootimg
-BOARD_MKBOOTIMG_ARGS += --dt_dir device/sony/$(TARGET_DEVICE)/dtbs
+BOARD_MKBOOTIMG_ARGS += --dt_dir out/target/product/$(TARGET_DEVICE)/dtbs
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --dt_version 2
 
 TARGET_KERNEL_ARCH := arm64
